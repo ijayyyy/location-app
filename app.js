@@ -4,7 +4,7 @@ const axios = require("axios");
 
 const app = express();
 
-const port = process.env.PORT || 4000;
+//const port = process.env.PORT || 4000;
 
 app.get("/api/hello", async (req, res) => {
   const visitor = req.query.visitor_name || "Guest";
@@ -43,10 +43,8 @@ app.get("/api/hello", async (req, res) => {
     res.status(500).json({ error: "Error fetching weather data" });
   }
 });
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+
 // Export the app
-//module.exports = app;
+module.exports = app;
 
 

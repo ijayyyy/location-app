@@ -1,5 +1,7 @@
 {
     "version": 2,
+    "framework": "node",
+    "name": "location",
     "builds": [
       {
         "src": "app.js",
@@ -8,7 +10,7 @@
     ],
     "routes": [
       {
-        "src": "/api/hello",
+        "src": "/(.*)",
         "dest": "/app.js"
       }
     ]
