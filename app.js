@@ -10,7 +10,7 @@ app.get("/api/hello", async (req, res) => {
   const visitor = req.query.visitor_name || "Guest";
   const clientIp = req.ip === "::ffff:127.0.0.1" || req.ip === "127.0.0.1" ? null : req.ip;
  
-  let location = "New York"; // Default location
+  let location = "Lagos"; // Default location
 
   if (clientIp) {
     // Fetch location data from positionstack.com API
