@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "framework": "nodejs",
     "name": "location",
     "builds": [
       {
